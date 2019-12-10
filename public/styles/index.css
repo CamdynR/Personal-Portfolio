@@ -57,6 +57,7 @@ nav > img {
 
 .aboutMeBar {
   height: 24vh;
+  height: calc(var(--vh, 1vh) * 24);
   width: 85%;
 }
 
@@ -70,24 +71,28 @@ nav > img {
 
 .aboutMeBarBottomLeft {
   border-bottom-right-radius: 12vh;
+  border-bottom-right-radius: calc(var(--vh, 1vh) * 12);
   height: 50%;
   width: 100%;
 }
 
 .aboutMeBarBottomRight {
   border-bottom-left-radius: 12vh;
+  border-bottom-left-radius: calc(var(--vh, 1vh) * 12);
   height: 50%;
   width: 100%;
 }
 
 .aboutMeBarTopLeft {
   border-top-right-radius: 12vh;
+  border-top-right-radius: calc(var(--vh, 1vh) * 12);
   height: 50%;
   width: 100%;
 }
 
 .aboutMeBarTopRight {
   border-top-left-radius: 12vh;
+  border-top-left-radius: calc(var(--vh, 1vh) * 12);
   height: 50%;
   width: 100%;
 }
@@ -99,13 +104,17 @@ nav > img {
 
 .aboutLeftBar {
   border-top-right-radius: 12vh;
+  border-top-right-radius: calc(var(--vh, 1vh) * 12);
   border-bottom-right-radius: 12vh;
+  border-bottom-right-radius: calc(var(--vh, 1vh) * 12);
   float: left;
 }
 
 .aboutRightBar {
   border-top-left-radius: 12vh;
+  border-top-left-radius: calc(var(--vh, 1vh) * 12);
   border-bottom-left-radius: 12vh;
+  border-bottom-left-radius: calc(var(--vh, 1vh) * 12);
   float: right;
   text-align: right;
 }
@@ -130,12 +139,14 @@ nav > img {
 
 .bottomLayer {
   height: calc(30vh / 7);
+  height: calc(var(--vh, 1vh) * (30 / 7));
   width: 100%;
 }
 
 .bottomLayerStripes {
   bottom: 0;
   height: 30vh;
+  height: calc(var(--vh, 1vh) * 30);
   position: absolute;
   width: 100%;
 }
@@ -161,6 +172,7 @@ nav > img {
 
 .downArrow {
   bottom: 1vh;
+  bottom: calc(var(--vh, 1vh) * 1);
   display: grid;
   justify-items: center;
   left: 0;
@@ -272,6 +284,7 @@ nav > img {
 #centerDescriptors {
   align-items: center;
   bottom: 32vh;
+  bottom: calc(var(--vh, 1vh) * 32);
   display: grid;
   font-size: 33px;
   grid-template-areas:
@@ -281,6 +294,7 @@ nav > img {
   grid-template-columns: auto auto;
   grid-template-rows: repeat(3, auto);
   height: 40vh;
+  height: calc(var(--vh, 1vh) * 40);
   position: absolute;
   width: 100%;
 }
@@ -312,6 +326,7 @@ nav > img {
   height: calc(var(--vh, 1vh) * 100);
   position: absolute;
   top: 100vh;
+  top: calc(var(--vh, 1vh) * 100);
   width: 100%;
 }
 
