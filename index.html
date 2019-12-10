@@ -32,6 +32,9 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -95,6 +98,39 @@
   <!-- Beginning of About Me Section -->
   <section id="sectionAboutMe">
     <h2>About Me</h2>
+
+    <!-- Orange section - University and Area of Study -->
+    <div class="aboutMeBar aboutLeftBar" id="firstAboutBar">
+      <div class="aboutMeBarTopLeft aboutTopText" id="aboutOrangeTop">
+        <h3>Cognitive Science</h3>
+        <h4>Human Computer Interaction</h4>
+      </div>
+      <div class="aboutMeBarBottomLeft aboutBottomText" id="aboutOrangeBottom">
+        <p id="university">UC San Diego</p>
+        <p id="gradYear">Class of 2020</p>
+      </div>
+    </div>
+
+    <!-- Green Section - Career and Motivation -->
+    <div class="aboutMeBar aboutRightBar" id="secondAboutBar">
+      <div class="aboutMeBarTopRight aboutTopText" id="aboutGreenTop">
+        <h3>Career & Passion</h3>
+        <h4>Front-End Development</h4>
+      </div>
+      <div class="aboutMeBarBottomRight aboutBottomText" id="aboutGreenBottom">
+        <p>Designing, Iterating, then Building. I love it all.</p>
+      </div>
+    </div>
+
+    <!-- Blue Section - Leisure Activities -->
+    <div class="aboutMeBar aboutLeftBar">
+      <div class="aboutMeBarTopLeft aboutTopText" id="aboutBlueTop">
+        <h3>What do I <span class="breakHere">do just for fun?</span></h3>
+      </div>
+      <div class="aboutMeBarBottomLeft aboutBottomText" id="aboutBlueBottom">
+        <p>Find new music and make unique playlists for friends.</p>
+      </div>
+    </div>
 
     <!-- Arrow at bottom of screen that goes to next section-->
     <div id="scrollProjects" class="downArrow" onclick="nextSection('sectionIntro')">

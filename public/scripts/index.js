@@ -17,7 +17,7 @@ function toggleSideNav() {
 
 // Scrolls to the specified section of the page
 function nextSection(sectionId) {
-  document.getElementById(sectionId).scrollIntoView({
-    behavior: 'smooth'
-  });
+  $("html, body").animate({
+    scrollTop: $(`#${sectionId}`).offset().top
+  }, 750);
 }
