@@ -39,13 +39,13 @@ nav > img {
 }
 
 .bottomLayer {
-  height: 26px;
+  height: calc(30vh / 7);
   width: 100%;
 }
 
 .bottomLayerStripes {
   bottom: 0;
-  height: 182px;
+  height: 30vh;
   position: absolute;
   width: 100%;
 }
@@ -56,7 +56,7 @@ nav > img {
 
 .centerLeftCol {
   justify-self: left;
-  line-height: 1.2;
+  line-height: 1;
   padding-left: 20px;
 }
 
@@ -92,7 +92,7 @@ nav > img {
 
 #centerDescriptors {
   align-items: center;
-  bottom: 189px;
+  bottom: 32vh;
   display: grid;
   font-size: 33px;
   grid-template-areas:
@@ -101,7 +101,7 @@ nav > img {
   "playlist headphones";
   grid-template-columns: auto auto;
   grid-template-rows: repeat(3, auto);
-  height: 240px;
+  height: 40vh;
   position: absolute;
   width: 100%;
 }
@@ -123,14 +123,21 @@ nav > img {
 }
 
 #nextSection {
-  bottom: 2px;
-  left: 50%;
-  margin-left: -20px;
+  bottom: 1vh;
+  display: grid;
+  justify-items: center;
+  left: 0;
   position: absolute;
+  width: 100%;
 }
 
 #nextSection:hover {
   cursor: pointer;
+}
+
+#nextSection img {
+  margin: 0 auto;
+  width: calc((2*(30vh / 7)) - 2vh);
 }
 
 #sideMenu {
