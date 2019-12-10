@@ -309,6 +309,7 @@ nav > img {
 #sectionAboutMe {
   background-color: #f1e2c5;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: absolute;
   top: 100vh;
   width: 100%;
@@ -317,6 +318,7 @@ nav > img {
 #sideMenu {
   color: #f1e2c5;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   overflow-x: hidden;
   position: fixed;
   right: 0;

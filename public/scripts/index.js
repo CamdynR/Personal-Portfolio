@@ -1,6 +1,9 @@
 const sideMenu = document.getElementById('sideMenu');
 const sideMenuBtn = document.getElementById('sideMenuBtn');
 
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 // Opens/Closes the side menu bar
 function toggleSideNav() {
   const isOpen = sideMenu.getAttribute('data-open');
