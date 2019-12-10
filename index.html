@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Camdyn's Portfolio</title>
+  <title>Camdyn Rasque</title>
 
   <!-- Styles -->
   <link type="text/css" rel="stylesheet" href="public/styles/index.css">
@@ -35,55 +35,86 @@
 </head>
 
 <body>
-  <header>
-    <h1>Camdyn Rasque</h1>
+  <!-- Beginning of Intro Section -->
+  <section id="sectionIntro">
+    <header>
+      <h1>Camdyn Rasque</h1>
 
-    <!--- Right sidebar -->
-    <nav>
-      <img alt="Side Menu Button" id="sideMenuBtn" onclick="toggleSideNav()"
-        src="public/images/menu.png" width=30>
-      <ul id="sideMenu" class="brown" data-open="no">
-        <li>
-          <img alt="Close Side Menu" onclick="toggleSideNav()" src="public/images/close.png"
-            width=30>
-        </li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Resume</a></li>
-        <li><a href="">Github</a></li>
-        <li><a href="">LinkedIn</a></li>
-        <li><a href="">Spotify</a></li>
-      </ul>
-    </nav>
-  </header>
+      <!--- Right sidebar -->
+      <nav>
+        <img alt="Side Menu Button" id="sideMenuBtn" onclick="toggleSideNav()"
+          src="public/images/menu.png" width=30>
+        <ul id="sideMenu" class="brown" data-open="no">
+          <li>
+            <img alt="Close Side Menu" onclick="toggleSideNav()" src="public/images/close.png"
+              width=30>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="public/files/CamdynRasque-Resume.pdf">Resume</a></li>
+          <li><a href="https://github.com/CamdynR">Github</a></li>
+          <li><a href="https://linkedin.com/in/camdyn-rasque/">LinkedIn</a></li>
+          <li><a
+              href="https://open.spotify.com/user/camdynrasque?si=qHaA1IM3SwSsNBfIelXzNg">Spotify</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- Center descriptors about me (Camdyn) -->
-  <div id="centerDescriptors">
-    <p id="centerFrontend" class="centerLeftCol">Front-End Developer</p>
-    <!-- Code symbol </> -->
-    <p id="centerCode" class="centerRightCol">&lt;/&gt;</p>
-    <p id="centerCollab" class="centerLeftCol">Collaborator</p>
-    <img alt="Hand shake" class="centerRightCol" id="centerHands" src="public/images/support.png"
-      width=55>
-    <p id="centerPlaylist" class="centerLeftCol">Playlist<br>Curator</p>
-    <img alt="Headphones" class="centerRightCol" id="centerHeadphones"
-      src="public/images/headphones.png" width=55>
-  </div>
+    <!-- Center descriptors about me (Camdyn) -->
+    <div id="centerDescriptors">
+      <p id="centerFrontend" class="centerLeftCol">Front-End Developer</p>
+      <!-- Code symbol </> -->
+      <p id="centerCode" class="centerRightCol">&lt;/&gt;</p>
+      <p id="centerCollab" class="centerLeftCol">Collaborator</p>
+      <img alt="Hand shake" class="centerRightCol" id="centerHands" src="public/images/support.png"
+        width=55>
+      <p id="centerPlaylist" class="centerLeftCol">Playlist<br>Curator</p>
+      <img alt="Headphones" class="centerRightCol" id="centerHeadphones"
+        src="public/images/headphones.png" width=55>
+    </div>
 
-  <!-- Colorful bottom of the first section -->
-  <div class="bottomLayerStripes">
-    <div class="bottomLayer yellow"></div>
-    <div class="bottomLayer orange"></div>
-    <div class="bottomLayer red"></div>
-    <div class="bottomLayer purple"></div>
-    <div class="bottomLayer blue"></div>
-    <div class="bottomLayer brown"></div>
-    <div class="bottomLayer brown"></div>
-  </div>
+    <!-- Colorful bottom of the first section -->
+    <div class="bottomLayerStripes">
+      <div class="bottomLayer yellow"></div>
+      <div class="bottomLayer orange"></div>
+      <div class="bottomLayer red"></div>
+      <div class="bottomLayer purple"></div>
+      <div class="bottomLayer blue"></div>
+      <div class="bottomLayer brown"></div>
+      <div class="bottomLayer brown"></div>
+    </div>
 
-  <!-- Arrow at bottom of screen -->
-  <a href="" id="nextSection">
-    <img alt="Next Section" src="public/images/down-chevron.png">
-  </a>
+    <!-- Arrow at bottom of screen that goes to next section-->
+    <div id="scrollAboutMe" class="downArrow" onclick="nextSection('sectionAboutMe')">
+      <img alt="Next Section" src="public/images/down-chevron.png">
+    </div>
+
+    <!-- End of Intro Section -->
+  </section>
+
+  <!-- Beginning of About Me Section -->
+  <section id="sectionAboutMe">
+    <h2>About Me</h2>
+
+    <!-- Arrow at bottom of screen that goes to next section-->
+    <div id="scrollProjects" class="downArrow" onclick="nextSection('sectionIntro')">
+      <img alt="Next Section" src="public/images/down-chevron-brown.png">
+    </div>
+  </section>
+
+  <!-- 
+  <section id="sectionProjects">
+    <div id="scrollWork" class="downArrow" onclick="nextSection('sectionWork')">
+      <img alt="Next Section" src="public/images/down-chevron.png">
+    </div>
+  </section>
+
+  <section id="sectionWork">
+    <div id="scrollTop" class="downArrow" onclick="nextSection('sectionIntro')">
+      <img alt="Next Section" src="public/images/down-chevron.png">
+    </div>
+  </section>
+   -->
 
   <!-- Scripts -->
   <script src="public/scripts/index.js"></script>

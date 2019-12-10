@@ -12,6 +12,18 @@ body {
   color: #382a1f;
   font-family: 'Calistoga', cursive;
   font-weight: normal;
+  -webkit-tap-highlight-color:transparent;
+}
+
+h1, h2, h3, 
+h4, h5, h6 {
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 38px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 header {
@@ -22,7 +34,6 @@ header h1 {
   float: left;
   font-size: 38px;
   margin: 8px 0 0 13px;
-  font-weight: normal;
 }
 
 nav img {
@@ -63,6 +74,25 @@ nav > img {
 .centerRightCol {
   justify-self: center;
   padding-right: 20px;
+}
+
+.downArrow {
+  bottom: 1vh;
+  display: grid;
+  justify-items: center;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.downArrow:hover {
+  cursor: pointer;
+}
+
+.downArrow img {
+  
+  margin: 0 auto;
+  width: calc((2*(30vh / 7)) - 2vh);
 }
 
 .orange {
@@ -122,29 +152,19 @@ nav > img {
   grid-area: playlist;
 }
 
-#nextSection {
-  bottom: 1vh;
-  display: grid;
-  justify-items: center;
-  left: 0;
+#sectionAboutMe {
+  background-color: #f1e2c5;
+  height: 100vh;
   position: absolute;
+  top: 100vh;
   width: 100%;
-}
-
-#nextSection:hover {
-  cursor: pointer;
-}
-
-#nextSection img {
-  margin: 0 auto;
-  width: calc((2*(30vh / 7)) - 2vh);
 }
 
 #sideMenu {
   color: #f1e2c5;
   height: 100vh;
   overflow-x: hidden;
-  position: absolute;
+  position: fixed;
   right: 0;
   transition: 0.4s;
   width: 0;
@@ -163,6 +183,12 @@ nav > img {
 
 #sideMenu li a:hover {
   text-decoration: none;
+}
+
+#sideMenuBtn {
+  position: fixed;
+  right: 0;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 360px) {

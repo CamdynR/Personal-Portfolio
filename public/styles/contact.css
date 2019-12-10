@@ -1,0 +1,22 @@
+/* Stylesheet for the Contact Page*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #382a1f;
+}
+
+body {
+  background-color: #f1e2c5;
+  color: #382a1f;
+  font-family: 'Calistoga', cursive;
+  font-weight: normal;
+  -webkit-tap-highlight-color:transparent;
+}
+
+h1 {
+  font-weight: normal;
+}

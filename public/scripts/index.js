@@ -14,3 +14,10 @@ function toggleSideNav() {
     sideMenu.setAttribute('data-open', 'no');
   }
 }
+
+// Scrolls to the specified section of the page
+function nextSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({
+    behavior: 'smooth'
+  });
+}
