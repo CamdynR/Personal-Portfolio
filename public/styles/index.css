@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #f1e2c5;
+}
+
+body {
+  background-color: #f1e2c5;
+  color: #382a1f;
+  font-family: 'Calistoga', cursive;
+  font-weight: normal;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  float: left;
+  font-size: 38px;
+  margin: 8px 0 0 13px;
+  font-weight: normal;
+}
+
+nav img {
+  cursor: pointer;
+}
+
+nav > img {
+  float: right;
+  margin: 20px 18px 0 0;
+}
+
+.blue {
+  background-color: #5d7c8e;
+}
+
+.bottomLayer {
+  height: 34px;
+  width: 100%;
+}
+
+.bottomLayerStripes {
+  bottom: 0;
+  height: 238px;
+  position: absolute;
+  width: 100%;
+}
+
+.brown {
+  background-color: #382a1f;
+}
+
+.centerLeftCol {
+  justify-self: left;
+  line-height: 1.2;
+  padding-left: 20px;
+}
+
+.centerRightCol {
+  justify-self: center;
+  padding-right: 20px;
+}
+
+.orange {
+  background-color: #e45300;
+}
+
+.purple {
+  background-color: #a81252;
+}
+
+.red {
+  background-color: #dd2501;
+}
+
+.yellow {
+  background-color: #ebad00;
+}
+
+#centerCode {
+  font-size: 37px;
+  grid-area: code;
+}
+
+#centerCollab {
+  grid-area: collab;
+}
+
+#centerDescriptors {
+  align-items: center;
+  bottom: 245px;
+  display: grid;
+  font-size: 33px;
+  grid-template-areas:
+  "frontend code"
+  "collab hands"
+  "playlist headphones";
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto);
+  height: 270px;
+  position: absolute;
+  width: 100%;
+}
+
+#centerFrontend {
+  grid-area: frontend;
+}
+
+#centerHands {
+  grid-area: hands;
+}
+
+#centerHeadphones {
+  grid-area: headphones;
+}
+
+#centerPlaylist {
+  grid-area: playlist;
+}
+
+#nextSection {
+  bottom: 4px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+}
+
+#nextSection:hover {
+  cursor: pointer;
+}
+
+#sideMenu {
+  color: #f1e2c5;
+  height: 100vh;
+  overflow-x: hidden;
+  position: absolute;
+  right: 0;
+  transition: 0.4s;
+  width: 0;
+  z-index: 2;
+}
+
+#sideMenu li {
+  font-size: 28px;
+  list-style-type: none;
+  margin: 8px 0 0 15px;
+}
+
+#sideMenu li:first-child {
+  margin: 17px 0 15px 15px;
+}
+
+#sideMenu li a:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 360px) {
+  header h1 {
+    font-size: 33px;
+  }
+
+  nav img {
+    margin: 17px 15px 0 0;
+    width: 28px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #centerDescriptors {
+    left: 30%;
+    margin-left: -15%;
+    width: 70%;
+  }
+}
