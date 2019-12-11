@@ -185,9 +185,8 @@ nav > img {
 }
 
 .downArrow img {
-  
   margin: 0 auto;
-  width: calc((2*(30vh / 7)) - 2vh);
+  width: calc((2*(30vh / 7)) - 1.5vh);
 }
 
 .orange {
