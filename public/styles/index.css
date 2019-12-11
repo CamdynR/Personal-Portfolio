@@ -25,9 +25,13 @@ h4, h5, h6, p {
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 2.375em;
   text-align: center;
   margin-top: 10px;
+}
+
+html {
+  font-size: 1em;
 }
 
 header {
@@ -36,7 +40,7 @@ header {
 
 header h1 {
   float: left;
-  font-size: 38px;
+  font-size: 2.375em;
   margin: 8px 0 0 13px;
 }
 
@@ -210,7 +214,7 @@ nav > img {
 }
 
 #aboutBlueBottom p {
-  font-size: 21px;
+  font-size: 1.3125em;
   line-height: 1.2;
   margin-left: 5px;
   padding-top: 3px;
@@ -222,7 +226,7 @@ nav > img {
 
 #aboutBlueTop h3 {
   bottom: 5px;
-  font-size: 28px;
+  font-size: 1.75em;
   left: 5px;
   line-height: 1;
 }
@@ -232,7 +236,7 @@ nav > img {
 }
 
 #aboutGreenBottom p {
-  font-size: 22px;
+  font-size: 1.375em;
   line-height: 1.3;
   margin-right: 5px;
   padding-top: 3px;
@@ -244,12 +248,12 @@ nav > img {
 
 #aboutGreenTop h3 {
   bottom: 25px;
-  font-size: 32px;
+  font-size: 2em;
   right: 5px;
 }
 
 #aboutGreenTop h4 {
-  font-size: 25px;
+  font-size: 1.5625em;
   right: 5px;
 }
 
@@ -262,17 +266,17 @@ nav > img {
 }
 
 #aboutOrangeTop h3 {
-  font-size: 32px;
+  font-size: 2em;
   left: 5px;
 }
 
 #aboutOrangeTop h4 {
-  font-size: 20px;
+  font-size: 1.25em;
   left: 5px;
 }
 
 #centerCode {
-  font-size: 37px;
+  font-size: 1.12121212121em;
   grid-area: code;
 }
 
@@ -285,7 +289,7 @@ nav > img {
   bottom: 32vh;
   bottom: calc(var(--vh, 1vh) * 32);
   display: grid;
-  font-size: 33px;
+  font-size: 2.0625em;
   grid-template-areas:
   "frontend code"
   "collab hands"
@@ -314,19 +318,110 @@ nav > img {
   grid-area: playlist;
 }
 
+#circleBlack {
+  background-color: #433a3f;
+  border-radius: 120px;
+  height: 240px;
+  right: 20px;
+  top: 40px;
+  position: absolute;
+  width: 240px;
+}
+
+#circleBlue {
+  background-color: #495b7f;
+  border-radius: 120px;
+  height: 240px;
+  left: 10px;
+  top: 50%;
+  margin-top: -120px;
+  position: absolute;
+  width: 240px;
+}
+
+#circleContainer {
+  align-items: center;
+  display: grid;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  justify-items: center;
+  margin-top: -59px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+#circlePink {
+  background-color: #e196ab;
+  border-radius: 120px;
+  height: 240px;
+  right: 0;
+  top: 50%;
+  margin-top: -110px;
+  position: absolute;
+  width: 240px;
+}
+
+#circleRed {
+  background-color: #eb132a;
+  border-radius: 120px;
+  height: 240px;
+  bottom: -20px;
+  left: 0;
+  position: absolute;
+  width: 240px;
+}
+
+#circleTrqse {
+  background-color: #40918b;
+  border-radius: 120px;
+  height: 240px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 240px;
+}
+
 #gradYear {
-  font-size: 20px;
+  font-size: 1.25em;
   margin: -5px 0 0 6px;
 }
 
-#sectionAboutMe {
+#projectCircles {
+  height: 450px;
+  position: relative;
+  width: 360px;
+}
+
+section:not(:first-of-type) {
   background-color: #f1e2c5;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: absolute;
+  width: 100%;
+}
+
+#scrollTop img {
+  transform: rotate(180deg);
+}
+
+#scrollWork {
+  z-index: 2;
+}
+
+#sectionAboutMe {
   top: 100vh;
   top: calc(var(--vh, 1vh) * 100);
-  width: 100%;
+}
+
+#sectionProjects {
+  top: 200vh;
+  top: calc(var(--vh, 1vh) * 200);
+}
+
+#sectionWork {
+  top: 300vh;
+  top: calc(var(--vh, 1vh) * 300);
 }
 
 #sideMenu {
@@ -336,13 +431,12 @@ nav > img {
   overflow-x: hidden;
   position: fixed;
   right: 0;
-  transition: 0.4s;
   width: 0;
-  z-index: 2;
+  z-index: 3;
 }
 
 #sideMenu li {
-  font-size: 28px;
+  font-size: 1.75em;
   list-style-type: none;
   margin: 8px 0 0 15px;
 }
@@ -362,13 +456,13 @@ nav > img {
 }
 
 #university {
-  font-size: 28px;
+  font-size: 1.75em;
   margin-left: 5px;
 }
 
 @media only screen and (max-width: 360px) {
   header h1 {
-    font-size: 33px;
+    font-size: 2.0625em;
   }
 
   nav img {

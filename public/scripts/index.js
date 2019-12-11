@@ -1,23 +1,27 @@
-const sideMenu = document.getElementById('sideMenu');
-const sideMenuBtn = document.getElementById('sideMenuBtn');
-
 // Solution for Mobile viewport found here
 // https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 // Written by: Louis Hoebregts
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
+const sideMenu = $('#sideMenu');
+const sideMenuBtn = $('#sideMenuBtn');
+
 // Opens/Closes the side menu bar
 function toggleSideNav() {
-  const isOpen = sideMenu.getAttribute('data-open');
+  const isOpen = sideMenu.attr('data-open');
   if (isOpen == 'no') {
-    sideMenuBtn.style.display = 'none';
-    sideMenu.style.width = '187.5px';
-    sideMenu.setAttribute('data-open', 'yes');
+    sideMenuBtn.fadeOut(150);
+    sideMenu.animate(
+      { 'width': '187.5px' }, 400
+    );
+    sideMenu.attr('data-open', 'yes');
   } else {
-    sideMenuBtn.style.display = 'block';
-    sideMenu.style.width = '0';
-    sideMenu.setAttribute('data-open', 'no');
+    sideMenu.animate(
+      { 'width': '0px' }, 400
+    );
+    sideMenuBtn.fadeIn(500);
+    sideMenu.attr('data-open', 'no');
   }
 }
 

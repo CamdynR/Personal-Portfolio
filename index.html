@@ -53,11 +53,11 @@
               width=30>
           </li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="public/files/CamdynRasque-Resume.pdf">Resume</a></li>
-          <li><a href="https://github.com/CamdynR">Github</a></li>
-          <li><a href="https://linkedin.com/in/camdyn-rasque/">LinkedIn</a></li>
-          <li><a
-              href="https://open.spotify.com/user/camdynrasque?si=qHaA1IM3SwSsNBfIelXzNg">Spotify</a>
+          <li><a href="public/files/CamdynRasque-Resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="https://github.com/CamdynR" target="_blank">Github</a></li>
+          <li><a href="https://linkedin.com/in/camdyn-rasque/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://open.spotify.com/user/camdynrasque?si=qHaA1IM3SwSsNBfIelXzNg"
+              target="_blank">Spotify</a>
           </li>
         </ul>
       </nav>
@@ -133,24 +133,61 @@
     </div>
 
     <!-- Arrow at bottom of screen that goes to next section-->
-    <div id="scrollProjects" class="downArrow" onclick="nextSection('sectionIntro')">
+    <div id="scrollProjects" class="downArrow" onclick="nextSection('sectionProjects')">
       <img alt="Next Section" src="public/images/down-chevron-brown.png">
     </div>
   </section>
+  <!-- End of About Me Section -->
 
-  <!-- 
+  <!-- Beginning of Projects Section -->
   <section id="sectionProjects">
-    <div id="scrollWork" class="downArrow" onclick="nextSection('sectionWork')">
-      <img alt="Next Section" src="public/images/down-chevron.png">
-    </div>
-  </section>
+    <h2 style="position: relative; z-index: 2;">Projects</h2>
 
-  <section id="sectionWork">
-    <div id="scrollTop" class="downArrow" onclick="nextSection('sectionIntro')">
-      <img alt="Next Section" src="public/images/down-chevron.png">
+    <div id="circleContainer">
+      <!-- Colorful Circles -->
+      <div id="projectCircles">
+        <div class="bgCircle" id="circleBlack"></div>
+        <div class="bgCircle" id="circleBlue"></div>
+        <div class="bgCircle" id="circleTrqse">
+          <!-- h3>Pokémon</h3>
+          <h3>Battle Assistance</h3>
+          <p>Web App to help users choose which move to use in a Pokémon battle. Built with Node and
+              Firebase</p>
+          <a href="https://pokemon-battle-assistant.herokuapp.com/" target="_blank">View Project</a -->
+        </div>
+        <div class="bgCircle" id="circlePink">
+          <!-- h3>Both Sides</h3>
+          <h3>Web Application</h3>
+          <p>Fetches left and right leaning news articles for every headline. Built with Node and News
+              API</p>
+          <a href="https://github.com/CamdynR/Cogs121/tree/master/static_files" target="_blank">View
+              Project</a -->
+        </div>
+        <div class="bgCircle" id="circleRed">
+          <!-- h3>QuizWiz</h3>
+          <h3>SDHacks 2019</h3>
+          <p>Generates fill in the blank style quizzes from lecture notes. Uses Amazon's Comprehend
+             NLP API</p>
+          <a href="https://github.com/CamdynR/SDHacks2019" target="_blank">View Project</a -->
+        </div>
+      </div>
+    </div>
+
+    <div id="scrollWork" class="downArrow" onclick="nextSection('sectionWork')">
+      <img alt="Next Section" src="public/images/down-chevron-brown.png">
     </div>
   </section>
-   -->
+  <!-- End of Projects Section -->
+
+  <!-- Beginning of Work History Section -->
+  <section id="sectionWork">
+    <h2>Work History</h2>
+
+    <div id="scrollTop" class="downArrow" onclick="nextSection('sectionIntro')">
+      <img alt="Next Section" src="public/images/down-chevron-brown.png">
+    </div>
+  </section>
+  <!-- End of Work History Section -->
 
   <!-- Scripts -->
   <script src="public/scripts/index.js"></script>
