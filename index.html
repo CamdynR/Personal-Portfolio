@@ -88,8 +88,8 @@
     </div>
 
     <!-- Arrow at bottom of screen that goes to next section-->
-    <div id="scrollAboutMe" class="downArrow" onclick="nextSection('sectionAboutMe')">
-      <img alt="Next Section" src="public/images/down-chevron.png">
+    <div id="downArrow" onclick="nextSection()">
+      <img alt="Next Section" src="public/images/down-chevron.png" id="downArrowImg">
     </div>
 
     <!-- End of Intro Section -->
@@ -131,11 +131,6 @@
         <p>Find new music and make unique playlists for friends.</p>
       </div>
     </div>
-
-    <!-- Arrow at bottom of screen that goes to next section-->
-    <div id="scrollProjects" class="downArrow" onclick="nextSection('sectionProjects')">
-      <img alt="Next Section" src="public/images/down-chevron-brown.png">
-    </div>
   </section>
   <!-- End of About Me Section -->
 
@@ -149,32 +144,28 @@
         <div class="bgCircle" id="circleBlack"></div>
         <div class="bgCircle" id="circleBlue"></div>
         <div class="bgCircle" id="circleTrqse">
-          <!-- h3>Pokémon</h3>
-          <h3>Battle Assistance</h3>
-          <p>Web App to help users choose which move to use in a Pokémon battle. Built with Node and
-              Firebase</p>
-          <a href="https://pokemon-battle-assistant.herokuapp.com/" target="_blank">View Project</a -->
+          <div id="circlePinkWrapText"></div>
+          <h3>QuizWiz<br>SDHacks 2019</h3>
+          <p>Generates fill in the blank style quizzes from lecture notes. Uses Amazon's Comprehend
+            NLP API</p>
+          <a href="https://github.com/CamdynR/SDHacks2019" target="_blank">View Project</a>
         </div>
         <div class="bgCircle" id="circlePink">
-          <!-- h3>Both Sides</h3>
-          <h3>Web Application</h3>
-          <p>Fetches left and right leaning news articles for every headline. Built with Node and News
-              API</p>
+          <div id="circleRedWrapText"></div>
+          <h3>Both Sides<br>Web Application</h3>
+          <p>Fetches left and right leaning news articles for every headline. Built with Node and
+            News
+            API</p>
           <a href="https://github.com/CamdynR/Cogs121/tree/master/static_files" target="_blank">View
-              Project</a -->
+            Project</a>
         </div>
         <div class="bgCircle" id="circleRed">
-          <!-- h3>QuizWiz</h3>
-          <h3>SDHacks 2019</h3>
-          <p>Generates fill in the blank style quizzes from lecture notes. Uses Amazon's Comprehend
-             NLP API</p>
-          <a href="https://github.com/CamdynR/SDHacks2019" target="_blank">View Project</a -->
+          <h3>Pokémon<br>Battle Assistance</h3>
+          <p>Web App to help users choose which move to use in a Pokémon battle. Built with Node and
+            Firebase</p>
+          <a href="https://pokemon-battle-assistant.herokuapp.com/" target="_blank">View Project</a>
         </div>
       </div>
-    </div>
-
-    <div id="scrollWork" class="downArrow" onclick="nextSection('sectionWork')">
-      <img alt="Next Section" src="public/images/down-chevron-brown.png">
     </div>
   </section>
   <!-- End of Projects Section -->
@@ -183,9 +174,6 @@
   <section id="sectionWork">
     <h2>Work History</h2>
 
-    <div id="scrollTop" class="downArrow" onclick="nextSection('sectionIntro')">
-      <img alt="Next Section" src="public/images/down-chevron-brown.png">
-    </div>
   </section>
   <!-- End of Work History Section -->
 

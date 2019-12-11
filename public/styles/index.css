@@ -137,6 +137,19 @@ nav > img {
   position: absolute;
 }
 
+.bgCircle {
+  border-radius: 120px;
+  height: 240px;
+  position: absolute;
+  text-align: center;
+  width: 240px;
+}
+
+.bgCircle h3 {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
 .blue {
   background-color: #5d7c8e;
 }
@@ -172,25 +185,6 @@ nav > img {
 .centerRightCol {
   justify-self: center;
   padding-right: 20px;
-}
-
-.downArrow {
-  bottom: 1vh;
-  bottom: calc(var(--vh, 1vh) * 1);
-  display: grid;
-  justify-items: center;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-
-.downArrow:hover {
-  cursor: pointer;
-}
-
-.downArrow img {
-  margin: 0 auto;
-  width: calc((2*(30vh / 7)) - 2.5vh);
 }
 
 .orange {
@@ -320,23 +314,15 @@ nav > img {
 
 #circleBlack {
   background-color: #433a3f;
-  border-radius: 120px;
-  height: 240px;
   right: 20px;
   top: 40px;
-  position: absolute;
-  width: 240px;
 }
 
 #circleBlue {
   background-color: #495b7f;
-  border-radius: 120px;
-  height: 240px;
   left: 10px;
   top: 50%;
   margin-top: -120px;
-  position: absolute;
-  width: 240px;
 }
 
 #circleContainer {
@@ -353,33 +339,103 @@ nav > img {
 
 #circlePink {
   background-color: #e196ab;
-  border-radius: 120px;
-  height: 240px;
   right: 0;
   top: 50%;
   margin-top: -110px;
-  position: absolute;
+}
+
+#circlePink a {
+  color: #382A1F;
+  margin-left: -36px;
+}
+
+#circlePink h3 {
+  padding-top: 20px;
+}
+
+#circlePink p {
+  font-size: 0.92em;
+  line-height: 1.1;
+  padding: 10px;
+}
+
+#circlePinkWrapText {
+  border-radius: 50%;
+  float: right;
+  height: 240px;
+  margin-top: 115px;
+  margin-right: -120px;
+  shape-outside: circle();
   width: 240px;
 }
 
 #circleRed {
   background-color: #eb132a;
-  border-radius: 120px;
-  height: 240px;
   bottom: -20px;
+  color: #f1e2c5;
   left: 0;
-  position: absolute;
+}
+
+#circleRed h3 {
+  padding-top: 35px;
+}
+
+#circleRed p {
+  line-height: 1.1;
+  padding: 15px 20px;
+}
+
+#circleRedWrapText {
+  border-radius: 50%;
+  float: left;
+  height: 240px;
+  margin: 115px 0 0 -120px;
+  shape-outside: circle();
   width: 240px;
 }
 
 #circleTrqse {
   background-color: #40918b;
-  border-radius: 120px;
-  height: 240px;
+  color: #f1e2c5;
   left: 0;
   top: 0;
-  position: absolute;
-  width: 240px;
+}
+
+#circleTrqse a {
+  margin-left: 29px;
+}
+
+#circleTrqse h3 {
+  padding-top: 20px;
+}
+
+#circleTrqse p {
+  font-size: 0.92em;
+  line-height: 1.1;
+  padding: 10px 5px 10px 15px;
+  text-align: left;
+  text-indent: 0.92em;
+}
+
+
+#downArrow {
+  bottom: 1vh;
+  bottom: calc(var(--vh, 1vh) * 1);
+  display: none;
+  justify-items: center;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+}
+
+#downArrow:hover {
+  cursor: pointer;
+}
+
+#downArrowImg {
+  margin: 0 auto;
+  width: calc((2*(30vh / 7)) - 2vh);
 }
 
 #gradYear {
@@ -432,7 +488,7 @@ section:not(:first-of-type) {
   position: fixed;
   right: 0;
   width: 0;
-  z-index: 3;
+  z-index: 20;
 }
 
 #sideMenu li {
