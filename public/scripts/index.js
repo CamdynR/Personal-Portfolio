@@ -82,6 +82,10 @@ window.addEventListener('scroll', () => {
 
 // Fade the scroll button in on load
 window.addEventListener('load', () => {
+  if (sectionWork.getBoundingClientRect().top < window.innerHeight) {
+    downArrowImg.setAttribute('src', 'public/images/down-chevron-brown.png');
+    downArrowImg.style.transform = 'rotate(180deg)';
+  }
   setTimeout(() => {
     downArrow.fadeIn(350).css('display', 'grid');
   }, 1600);

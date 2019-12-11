@@ -195,8 +195,19 @@ nav > img {
   background-color: #a81252;
 }
 
+.under {
+  height: 50%;
+  margin-top: -69%;
+  margin-left: -6.5% !important;
+}
+
 .red {
   background-color: #dd2501;
+}
+
+.workLayer {
+  border-bottom-left-radius: 90px;
+  margin-left: -5%;
 }
 
 .yellow {
@@ -443,6 +454,57 @@ nav > img {
   margin: -5px 0 0 6px;
 }
 
+#jobTopLayer {
+  background-color: #f1e2c5;
+  height: 20%;
+  margin-top: -30%;
+  margin-bottom: -10%;
+  position: relative;
+  z-index: 7;
+}
+
+#jobWebmaster {
+  background-color: #d9a342;
+  height: 50%;
+  margin-top: -28.5%;
+  position: relative;
+  z-index: 6;
+}
+
+#jobWebmasterUnder {
+  background-color: #a27c38;
+  position: relative;
+  z-index: 5;
+}
+
+#jobWebIntern {
+  background-color: #eb6d44;
+  height: 50%;
+  margin-top: -28.5%;
+  position: relative;
+  z-index: 4;
+}
+
+#jobWebInternUnder {
+  background-color: #bb5635;
+  position: relative;
+  z-index: 3;
+}
+
+#jobCSLead {
+  background-color: #665140;
+  height: 50%;
+  margin-top: -28.5%;
+  position: relative;
+  z-index: 2;
+}
+
+#jobCSLeadUnder {
+  background-color: #4a3c31;
+  position: relative;
+  z-index: 1;
+}
+
 #projectCircles {
   height: 450px;
   position: relative;
@@ -480,6 +542,11 @@ section:not(:first-of-type) {
   top: calc(var(--vh, 1vh) * 300);
 }
 
+#sectionWork h2 {
+  position: relative;
+  z-index: 10;
+}
+
 #sideMenu {
   color: #f1e2c5;
   height: 100vh;
@@ -508,12 +575,19 @@ section:not(:first-of-type) {
 #sideMenuBtn {
   position: fixed;
   right: 0;
-  z-index: 10;
+  z-index: 15;
 }
 
 #university {
   font-size: 1.75em;
   margin-left: 5px;
+}
+
+#workLayerWrapper {
+  height: 81vh;
+  height: calc(var(--vh, 1vh) * 81);
+  margin-top: 30px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 360px) {
