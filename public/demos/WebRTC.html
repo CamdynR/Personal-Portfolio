@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <style>
+    h1 {
+      font-family: sans-serif;
+    }
+
+    input {
+      border: 1px solid gray;
+      border-radius: 5px;
+      font-family: sans-serif;
+      font-size: 1.2em;
+      margin-top: 20px;
+      padding: 5px;
+      width: 245px;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    .userMsg {
+      color: blue;
+      font-weight: 700;
+    }
+
+    .friendMsg {
+      color: red;
+      font-weight: 700;
+    }
+
+    #connectedSign {
+      color: green; 
+      display: none;
+      font-family: sans-serif;
+      font-size: 1.3em;
+      margin: 30px 0 -10px 0; 
+    }
+
+    #messageArea {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-items: flex-end;
+      margin: 0;
+      max-height: 375px;
+      overflow-y: scroll;
+      padding: 0 0 15px 0;
+      width: 385px;
+    } 
+
+    #messageArea::-webkit-scrollbar {
+      display: none;
+    }
+    
+    #messageArea li {
+      font-family: sans-serif;
+      font-size: 1.2em;
+      list-style-type: none;
+      margin: 10px 0 0 20px;
+    }
+
+    #messageWrapper {
+      border: 1px solid gray;
+      border-radius: 5px;
+      display: grid;
+      align-items: flex-end;
+      height: 400px;
+    }
+
+    #textAreaStyle {
+      display: grid;
+      grid-template-areas: 
+      'one two'
+      'three four';
+      margin-top: 30px;
+    }
+
+    #textAreaStyle textarea {
+      height: 50px;
+      width: 250px;
+    }
+
+    #textAreaStyle button {
+      margin: 10px auto 0 auto;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div style="display:grid;justify-items:center;width:100%;">
+    <h1>Connection Test</h1>
+    <div id="messageWrapper">
+      <ul id="messageArea"></ul>
+    </div>
+    <form id="connectionForm">
+      <input id="userMsg" name="name" type="text" autocomplete="off">
+    </form>
+    <p id="connectedSign">Connected!</p>
+    <div id="textAreaStyle">
+      <textarea id="localOffer"></textarea>
+      <textarea id="remoteOffer"></textarea>
+      <button id="localOfferSet">Create Offer</button>
+      <button id="remoteOfferGot">Get Answer</button>
+    </div>
+  </div>
+
+  <script>
+    let form = document.getElementById('connectionForm');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      sendMsg();
+    });
+
+    function appendMessage(sender, message) {
+      if (message == null || message == '') {
+        return;
+      }
+
+      let addClass = 'userMsg';
+      if (sender != 'You') {
+        addClass = 'friendMsg';
+      }
+
+      let newMessage = document.createElement('li');
+      newMessage.innerHTML = `<span class="${addClass}">${sender}</span>: ${message}`;
+
+      let messageArea = document.getElementById('messageArea');
+      messageArea.appendChild(newMessage);
+    }
+  </script>
+
+  <script src="WebRTC.js"></script>
+</body>
+</html>
